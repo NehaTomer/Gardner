@@ -108,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
-
+  
 USE_I18N = True
 
 USE_TZ = True
@@ -125,3 +125,12 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL='/media/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "nehatomar6112@gmail.com"  #sender"s email
+EMAIL_HOST_PASSWORD = "upjrpfxgfrpubabj" #password associated with above email-id
+
+STATIC_ROOT = "/home/nehatomer/garden/static/"
